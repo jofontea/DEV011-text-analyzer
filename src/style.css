@@ -10,7 +10,6 @@ body {
   margin: 0;
   background-color: rgb(241, 179, 179);
   color: rgb(41, 15, 48);
-  
 }
 
 #reset-button {
@@ -22,17 +21,15 @@ body {
   background-color: #89b449;
   font-family: "Almarai", sans-serif;
   cursor: pointer;
-  box-shadow: 0px 3px 0px #0b092c; 
+  box-shadow: 0px 3px 0px #0b092c;
   color: #0b092c;
   font-size: medium;
-
 }
 textarea[name="user-input"] {
   width: 400px;
   height: 200px;
   resize: none;
 }
-
 .lista {
   border: 3px solid;
   margin: 2px;
@@ -45,10 +42,9 @@ textarea[name="user-input"] {
   margin-right: 50px;
   vertical-align: middle;
   text-align: center;
-  min-width: 20px; 
-  min-height: 20px; 
+  min-width: 20px;
+  min-height: 20px;
   overflow: auto;
-  
 }
 footer {
   position: fixed;
