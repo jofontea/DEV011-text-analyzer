@@ -1,23 +1,46 @@
-/*const analyzer = {  
-  getWordCount: (text) => {
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-  },
+const analyzer = {
   getCharacterCount: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
+    return text.length;
   },
   getCharacterCountExcludingSpaces: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    const caracteresSinEspacioSinPuntos = text.replace(/[\s,.!?;:()-]/g, "");
+    return caracteresSinEspacioSinPuntos.length;
   },
-  getAverageWordLength: (text) => {    
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+
+  getWordCount: (text) => {
+    const conteoPalabras = text.match(/\b(?!\d+\b)\w+\b/g);
+    return conteoPalabras ? conteoPalabras.length: 0;
   },
+
   getNumberCount: (text) => {
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    const conteoNumeros = /\b[-+]?\d+(\.\d+)?\b/g;
+    const soloNumeros = text.match(conteoNumeros);
+    if (soloNumeros === null) {
+      return 0;
+    } else {
+      return soloNumeros.length;
+    }
   },
+  getAverageWordLength: (text) => {
+    const palabras = text.split(" ");
+    let totalLongitud = 0;
+    for (let i = 0; i < palabras.length; i++) {
+      totalLongitud += palabras[i].length;
+    }
+    const promedio = totalLongitud / palabras.length;
+    const promedioRedondeado = promedio.toFixed(2);
+    const promedioNumero = Number(promedioRedondeado);
+    return promedioNumero;
+  },
+
   getNumberSum: (text) => {
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    const numeroSolo = /(?<=^|\s)-?\d+(\.\d+)?(?=\s|$)/g;
+    const numeros = text.match(numeroSolo) || [];
+    if (numeros.length === 0) {
+      return 0;
+    }
+    const suma = numeros.reduce((acumulador, valor) => acumulador + parseFloat(valor), 0);
+    return suma;
   },
 };
-
 export default analyzer;
-*/

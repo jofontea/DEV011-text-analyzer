@@ -1,76 +1,50 @@
-h1 { 
-    text-align: center;
+h1 {
+  text-align: center;
+}
+header {
+  text-align: center;
 }
 body {
-text-align: center;
- }
-
-li {
-color: black;
-margin: 30px; 
-
+  font-family: "Almarai", sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: rgb(241, 179, 179);
+  color: rgb(41, 15, 48);
 }
-#botonLimpiar {
-   justify-items: center;
+#reset-button {
+  text-align: center;
+  border: 3px solid;
+  margin: 2px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #89b449;
+  font-family: "Almarai", sans-serif;
+  cursor: pointer;
+  box-shadow: 0px 3px 0px #0b092c;
+  color: #0b092c;
+  font-size: medium;
 }
-textarea {
-    width: 400px;
-    height: 200px;
-    resize: none;
+textarea[name="user-input"] {
+  width: 400px;
+  height: 200px;
+  resize: none;
 }
-.word-count {
-    background-color: lightgreen;
-    border: 10px;
-    margin: 10px; 
-    padding: 10px;
-    border-radius: 30px;
-    display: inline;
-    
+.lista {
+  border: 3px solid;
+  margin: 2px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #dbd468;
+  display: inline-block;
+  box-sizing: content-box;
+  margin-left: 50px;
+  margin-right: 50px;
+  vertical-align: middle;
+  text-align: center;
+  min-width: 20px;
+  min-height: 20px;
+  overflow: auto;
 }
-.character-count {
-    background-color: lightgreen;
-    border: 10px;
-    margin: 10px; 
-    padding: 10px;
-    border-radius: 30px;
-    display: inline;
-    
-}
-.character-no-spaces-count {
-    background-color: lightgreen;
-    border: 10px;
-    margin: 10px; 
-    padding: 10px;
-    border-radius: 30px;
-    display: inline;
-    
-}
-.number-count {
-    background-color: lightgreen;
-    border: 10px;
-    margin: 10px; 
-    padding: 10px;
-    border-radius: 30px;
-    display: inline;
-}
-.number-sum {
-    background-color: lightgreen;
-    border: 10px;
-    margin: 10px; 
-    padding: 10px;
-    border-radius: 30px;
-    display: inline;
-    
-}
-.word-length-average {
-    background-color: lightgreen;
-    border: 10px;
-    margin: 10px; 
-    padding: 10px;
-    border-radius: 30px;
-    display: inline;
-    
-}
-footer{
-    position: fixed;
+footer {
+  position: fixed;
 }
