@@ -1,20 +1,15 @@
-h1 {
-  text-align: center;
-}
 header {
   text-align: center;
 }
 body {
   font-family: "Almarai", sans-serif;
   text-align: center;
-  margin: 0;
+  margin: 15px;
   background-color: rgb(241, 179, 179);
   color: rgb(41, 15, 48);
 }
 #reset-button {
-  text-align: center;
   border: 3px solid;
-  margin: 2px;
   padding: 10px;
   border-radius: 10px;
   background-color: #89b449;
@@ -31,19 +26,15 @@ textarea[name="user-input"] {
 }
 .lista {
   border: 3px solid;
-  margin: 2px;
   padding: 10px;
   border-radius: 10px;
   background-color: #dbd468;
   display: inline-block;
-  box-sizing: content-box;
   margin-left: 50px;
   margin-right: 50px;
   vertical-align: middle;
-  text-align: center;
   min-width: 20px;
   min-height: 20px;
-  overflow: auto;
 }
 footer {
   position: fixed;

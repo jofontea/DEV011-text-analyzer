@@ -34,8 +34,8 @@ userInput.addEventListener("keyup", function () {
 });
 document.getElementById("reset-button").addEventListener("click", function () {
   const métricas = document.querySelectorAll(".lista");
-  métricas.forEach(function (elementosLista) {
-    elementosLista.textContent = "0";
+  métricas.forEach(function (métricasLista) {
+    métricasLista.textContent = "0";
 
     const textareas = document.getElementsByName("user-input");
     textareas.forEach(function (textareas) {
